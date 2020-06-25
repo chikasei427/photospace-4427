@@ -16,9 +16,9 @@
         <%= f.label :picture, 'Upload Picture'%><br>
         <%= f.file_field :picture, class: 'form-control', rows: 5 %>
       </div>
-      <%= f.submit 'Post', class: 'btn btn-primary btn-block w-25 mx-auto' %>
+      <%= f.submit '投稿する', class: 'btn btn-primary btn-block w-50 mx-auto' %>
     <% end %>
     <br>
-    <%= link_to "Delete", @post, method: :delete, data: { confirm: "タイトル：「#{@post.title}」を削除します。よろしいですか？" }, class: 'btn btn-danger' %>
+    <%= link_to "削除する", @post, method: :delete, data: { confirm: "タイトル：「#{@post.title}」を削除します。よろしいですか？" }, class: 'btn btn-danger w-25' %>
   </div>
 </div>
